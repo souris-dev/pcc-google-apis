@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>T</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <script>
+        function doLogin() {
+            var url = document.getElementById("oauthUrl").innerText;
+            window.open(url, "_blank");
+        }
+    </script>
+  </head>
+  <body>
+    <h1>Google OAuth 2.0</h1>
+    <p><button onclick="doLogin()">Login Using Google</button></p>
+    <div id="oauthUrl" style="display: none"><%= oauthUrl %></div>
+  </body>
+</html>
